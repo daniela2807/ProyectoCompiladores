@@ -1,0 +1,10 @@
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\obj\Debug\ProyectoCompiladores.csprojAssemblyReference.cache
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\obj\Debug\ProyectoCompiladores.Form1.resources
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\obj\Debug\ProyectoCompiladores.Properties.Resources.resources
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\obj\Debug\ProyectoCompiladores.csproj.GenerateResource.cache
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\obj\Debug\ProyectoCompiladores.csproj.CoreCompileInputs.cache
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\bin\Debug\ProyectoCompiladores.exe.config
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\bin\Debug\ProyectoCompiladores.exe
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\bin\Debug\ProyectoCompiladores.pdb
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\obj\Debug\ProyectoCompiladores.exe
+C:\Users\dany_\source\repos\ProyectoCompiladores\ProyectoCompiladores\obj\Debug\ProyectoCompiladores.pdb
