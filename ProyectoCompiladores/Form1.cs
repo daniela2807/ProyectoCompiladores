@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace ProyectoCompiladores
 {
     public partial class Form1 : Form
     {
+
+        public string ruta = null;
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +30,7 @@ namespace ProyectoCompiladores
             string r;
             openFileDialog1.ShowDialog();
             System.IO.StreamReader archivo = new System.IO.StreamReader(openFileDialog1.FileName);
+            ruta = openFileDialog1.FileName;
             r = archivo.ReadLine();
             richTextBox1.Text = r.ToString();
 
@@ -34,13 +38,28 @@ namespace ProyectoCompiladores
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.FileName = "Sin titulo.txt";
-            var guardar = saveFileDialog1.ShowDialog();
-            if(guardar == DialogResult.OK)
+            if (ruta != null)
             {
-                using (var guardar_archivo = new System.IO.StreamWriter(saveFileDialog1.FileName))
+                //File.Delete(ruta);
+                using (FileStream fs = File.Create(ruta))
                 {
-                    guardar_archivo.WriteLine(richTextBox1.Text);
+                    byte[] info = new UTF8Encoding(true).GetBytes(richTextBox1.Text);
+                    // Add some information to the file.
+                    fs.Write(info, 0, info.Length);
+                }
+            }
+            else
+            {
+                saveFileDialog1.FileName = "Sintitulo.txt";
+                saveFileDialog1.Filter = "Text Files | *.txt";
+                saveFileDialog1.DefaultExt = "txt";
+                var guardar = saveFileDialog1.ShowDialog();
+                if (guardar == DialogResult.OK)
+                {
+                    using (var guardar_archivo = new System.IO.StreamWriter(saveFileDialog1.FileName))
+                    {
+                        guardar_archivo.WriteLine(richTextBox1.Text);
+                    }
                 }
             }
         }
@@ -91,6 +110,21 @@ namespace ProyectoCompiladores
             if (font == DialogResult.OK)
             {
                 richTextBox1.Font = fontDialog1.Font;
+            }
+        }
+
+        private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.FileName = "Sintitulo.txt";
+            saveFileDialog1.Filter= "Text Files | *.txt";
+            saveFileDialog1.DefaultExt = "txt";
+            var guardar = saveFileDialog1.ShowDialog();
+            if (guardar == DialogResult.OK)
+            {
+                using (var guardar_archivo = new System.IO.StreamWriter(saveFileDialog1.FileName))
+                {
+                    guardar_archivo.WriteLine(richTextBox1.Text);
+                }
             }
         }
     }

@@ -31,18 +31,25 @@ namespace ProyectoCompiladores
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aechivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.atrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adelanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.copiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cortarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.seleccionarTodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarTodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compilarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.atrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adelanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tab = new System.Windows.Forms.TabControl();
             this.Lexico = new System.Windows.Forms.TabPage();
             this.Sintactico = new System.Windows.Forms.TabPage();
@@ -51,13 +58,6 @@ namespace ProyectoCompiladores
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Errores = new System.Windows.Forms.TabPage();
             this.Resultados = new System.Windows.Forms.TabPage();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.copiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cortarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.seleccionarTodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarTodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
@@ -91,60 +91,6 @@ namespace ProyectoCompiladores
             this.aechivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.aechivoToolStripMenuItem.Text = "Archivo";
             // 
-            // editarToolStripMenuItem
-            // 
-            this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.atrasToolStripMenuItem,
-            this.adelanteToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.copiarToolStripMenuItem,
-            this.pegarToolStripMenuItem,
-            this.cortarToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.seleccionarTodoToolStripMenuItem,
-            this.eliminarTodoToolStripMenuItem});
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.editarToolStripMenuItem.Text = "Editar";
-            // 
-            // formatoToolStripMenuItem
-            // 
-            this.formatoToolStripMenuItem.Name = "formatoToolStripMenuItem";
-            this.formatoToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.formatoToolStripMenuItem.Text = "Formato";
-            this.formatoToolStripMenuItem.Click += new System.EventHandler(this.formatoToolStripMenuItem_Click);
-            // 
-            // compilarToolStripMenuItem
-            // 
-            this.compilarToolStripMenuItem.Name = "compilarToolStripMenuItem";
-            this.compilarToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.compilarToolStripMenuItem.Text = "Compilar";
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(24, 62);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox1.Size = new System.Drawing.Size(578, 396);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Codigo a Compilar";
-            // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
@@ -168,6 +114,7 @@ namespace ProyectoCompiladores
             | System.Windows.Forms.Keys.S)));
             this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.guardarComoToolStripMenuItem.Text = "Guardar Como";
+            this.guardarComoToolStripMenuItem.Click += new System.EventHandler(this.guardarComoToolStripMenuItem_Click);
             // 
             // cerrarToolStripMenuItem
             // 
@@ -176,6 +123,22 @@ namespace ProyectoCompiladores
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.atrasToolStripMenuItem,
+            this.adelanteToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.copiarToolStripMenuItem,
+            this.pegarToolStripMenuItem,
+            this.cortarToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.seleccionarTodoToolStripMenuItem,
+            this.eliminarTodoToolStripMenuItem});
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.editarToolStripMenuItem.Text = "Editar";
             // 
             // atrasToolStripMenuItem
             // 
@@ -192,90 +155,6 @@ namespace ProyectoCompiladores
             this.adelanteToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.adelanteToolStripMenuItem.Text = "Adelante";
             this.adelanteToolStripMenuItem.Click += new System.EventHandler(this.adelanteToolStripMenuItem_Click);
-            // 
-            // Tab
-            // 
-            this.Tab.Controls.Add(this.Lexico);
-            this.Tab.Controls.Add(this.Sintactico);
-            this.Tab.Controls.Add(this.Semantico);
-            this.Tab.Controls.Add(this.Codigo_Intermedio);
-            this.Tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab.Location = new System.Drawing.Point(641, 62);
-            this.Tab.Name = "Tab";
-            this.Tab.SelectedIndex = 0;
-            this.Tab.Size = new System.Drawing.Size(376, 396);
-            this.Tab.TabIndex = 12;
-            // 
-            // Lexico
-            // 
-            this.Lexico.Location = new System.Drawing.Point(4, 25);
-            this.Lexico.Name = "Lexico";
-            this.Lexico.Padding = new System.Windows.Forms.Padding(3);
-            this.Lexico.Size = new System.Drawing.Size(368, 367);
-            this.Lexico.TabIndex = 0;
-            this.Lexico.Text = "Lexico";
-            this.Lexico.UseVisualStyleBackColor = true;
-            // 
-            // Sintactico
-            // 
-            this.Sintactico.Location = new System.Drawing.Point(4, 22);
-            this.Sintactico.Name = "Sintactico";
-            this.Sintactico.Padding = new System.Windows.Forms.Padding(3);
-            this.Sintactico.Size = new System.Drawing.Size(368, 370);
-            this.Sintactico.TabIndex = 1;
-            this.Sintactico.Text = "Sintactico";
-            this.Sintactico.UseVisualStyleBackColor = true;
-            // 
-            // Semantico
-            // 
-            this.Semantico.Location = new System.Drawing.Point(4, 22);
-            this.Semantico.Name = "Semantico";
-            this.Semantico.Padding = new System.Windows.Forms.Padding(3);
-            this.Semantico.Size = new System.Drawing.Size(368, 370);
-            this.Semantico.TabIndex = 2;
-            this.Semantico.Text = "Semantico";
-            this.Semantico.UseVisualStyleBackColor = true;
-            // 
-            // Codigo_Intermedio
-            // 
-            this.Codigo_Intermedio.Location = new System.Drawing.Point(4, 22);
-            this.Codigo_Intermedio.Name = "Codigo_Intermedio";
-            this.Codigo_Intermedio.Padding = new System.Windows.Forms.Padding(3);
-            this.Codigo_Intermedio.Size = new System.Drawing.Size(368, 370);
-            this.Codigo_Intermedio.TabIndex = 3;
-            this.Codigo_Intermedio.Text = "Codigo_Intermedio";
-            this.Codigo_Intermedio.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.Errores);
-            this.tabControl1.Controls.Add(this.Resultados);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(24, 481);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(989, 130);
-            this.tabControl1.TabIndex = 13;
-            // 
-            // Errores
-            // 
-            this.Errores.Location = new System.Drawing.Point(4, 24);
-            this.Errores.Name = "Errores";
-            this.Errores.Padding = new System.Windows.Forms.Padding(3);
-            this.Errores.Size = new System.Drawing.Size(981, 102);
-            this.Errores.TabIndex = 0;
-            this.Errores.Text = "Errores";
-            this.Errores.UseVisualStyleBackColor = true;
-            // 
-            // Resultados
-            // 
-            this.Resultados.Location = new System.Drawing.Point(4, 25);
-            this.Resultados.Name = "Resultados";
-            this.Resultados.Padding = new System.Windows.Forms.Padding(3);
-            this.Resultados.Size = new System.Drawing.Size(981, 101);
-            this.Resultados.TabIndex = 1;
-            this.Resultados.Text = "Resultados";
-            this.Resultados.UseVisualStyleBackColor = true;
             // 
             // toolStripSeparator1
             // 
@@ -328,6 +207,128 @@ namespace ProyectoCompiladores
             this.eliminarTodoToolStripMenuItem.Text = "Eliminar Todo";
             this.eliminarTodoToolStripMenuItem.Click += new System.EventHandler(this.eliminarTodoToolStripMenuItem_Click);
             // 
+            // formatoToolStripMenuItem
+            // 
+            this.formatoToolStripMenuItem.Name = "formatoToolStripMenuItem";
+            this.formatoToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.formatoToolStripMenuItem.Text = "Formato";
+            this.formatoToolStripMenuItem.Click += new System.EventHandler(this.formatoToolStripMenuItem_Click);
+            // 
+            // compilarToolStripMenuItem
+            // 
+            this.compilarToolStripMenuItem.Name = "compilarToolStripMenuItem";
+            this.compilarToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.compilarToolStripMenuItem.Text = "Compilar";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(24, 62);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.richTextBox1.Size = new System.Drawing.Size(578, 396);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Codigo a Compilar";
+            // 
+            // Tab
+            // 
+            this.Tab.Controls.Add(this.Lexico);
+            this.Tab.Controls.Add(this.Sintactico);
+            this.Tab.Controls.Add(this.Semantico);
+            this.Tab.Controls.Add(this.Codigo_Intermedio);
+            this.Tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tab.Location = new System.Drawing.Point(641, 62);
+            this.Tab.Name = "Tab";
+            this.Tab.SelectedIndex = 0;
+            this.Tab.Size = new System.Drawing.Size(376, 396);
+            this.Tab.TabIndex = 12;
+            // 
+            // Lexico
+            // 
+            this.Lexico.Location = new System.Drawing.Point(4, 25);
+            this.Lexico.Name = "Lexico";
+            this.Lexico.Padding = new System.Windows.Forms.Padding(3);
+            this.Lexico.Size = new System.Drawing.Size(368, 367);
+            this.Lexico.TabIndex = 0;
+            this.Lexico.Text = "Lexico";
+            this.Lexico.UseVisualStyleBackColor = true;
+            // 
+            // Sintactico
+            // 
+            this.Sintactico.Location = new System.Drawing.Point(4, 25);
+            this.Sintactico.Name = "Sintactico";
+            this.Sintactico.Padding = new System.Windows.Forms.Padding(3);
+            this.Sintactico.Size = new System.Drawing.Size(368, 367);
+            this.Sintactico.TabIndex = 1;
+            this.Sintactico.Text = "Sintactico";
+            this.Sintactico.UseVisualStyleBackColor = true;
+            // 
+            // Semantico
+            // 
+            this.Semantico.Location = new System.Drawing.Point(4, 25);
+            this.Semantico.Name = "Semantico";
+            this.Semantico.Padding = new System.Windows.Forms.Padding(3);
+            this.Semantico.Size = new System.Drawing.Size(368, 367);
+            this.Semantico.TabIndex = 2;
+            this.Semantico.Text = "Semantico";
+            this.Semantico.UseVisualStyleBackColor = true;
+            // 
+            // Codigo_Intermedio
+            // 
+            this.Codigo_Intermedio.Location = new System.Drawing.Point(4, 25);
+            this.Codigo_Intermedio.Name = "Codigo_Intermedio";
+            this.Codigo_Intermedio.Padding = new System.Windows.Forms.Padding(3);
+            this.Codigo_Intermedio.Size = new System.Drawing.Size(368, 367);
+            this.Codigo_Intermedio.TabIndex = 3;
+            this.Codigo_Intermedio.Text = "Codigo_Intermedio";
+            this.Codigo_Intermedio.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.Errores);
+            this.tabControl1.Controls.Add(this.Resultados);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(24, 481);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(989, 130);
+            this.tabControl1.TabIndex = 13;
+            // 
+            // Errores
+            // 
+            this.Errores.Location = new System.Drawing.Point(4, 24);
+            this.Errores.Name = "Errores";
+            this.Errores.Padding = new System.Windows.Forms.Padding(3);
+            this.Errores.Size = new System.Drawing.Size(981, 102);
+            this.Errores.TabIndex = 0;
+            this.Errores.Text = "Errores";
+            this.Errores.UseVisualStyleBackColor = true;
+            // 
+            // Resultados
+            // 
+            this.Resultados.Location = new System.Drawing.Point(4, 24);
+            this.Resultados.Name = "Resultados";
+            this.Resultados.Padding = new System.Windows.Forms.Padding(3);
+            this.Resultados.Size = new System.Drawing.Size(981, 102);
+            this.Resultados.TabIndex = 1;
+            this.Resultados.Text = "Resultados";
+            this.Resultados.UseVisualStyleBackColor = true;
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -336,7 +337,7 @@ namespace ProyectoCompiladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrchid;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1043, 623);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Tab);
